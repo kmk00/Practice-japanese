@@ -1,3 +1,4 @@
+import { useAlphabetContext } from "@/context/alphabet";
 import { useMenuContext } from "@/context/menu";
 import React, { useEffect, useRef, useState } from "react";
 import CanvasDraw from "react-canvas-draw";
@@ -8,6 +9,9 @@ function drawSymbol() {
   const windowSize = useWindowSize();
   const canva = useRef();
   const [canvaSize, setCanvaSize] = useState(300);
+  const [alphabet] = useAlphabetContext();
+
+  console.log(alphabet);
 
   useEffect(() => {
     if (windowSize.width > 1280) {
