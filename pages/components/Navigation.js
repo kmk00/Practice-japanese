@@ -8,7 +8,7 @@ export const Navigation = () => {
   const showNavigation = () => setNavigate(!navigate);
 
   return (
-    <nav className="fixed bottom-0">
+    <nav className="fixed bottom-5">
       <div
         onClick={showNavigation}
         className=" hover:scale-105 md:p-4 ease-in duration-300 z-50 animate-pulse flex flex-col sm:gap-4 items-center"
@@ -19,6 +19,7 @@ export const Navigation = () => {
           width={100}
           height={30}
           src="/japanese-char.svg"
+          alt="Menu image"
         ></Image>
       </div>
 
@@ -31,7 +32,7 @@ export const Navigation = () => {
               className="hover:border-b-4 border-black duration-75 w-fit ease-in"
               onClick={showNavigation}
             >
-              <Link href="/">
+              <Link href="/drawSymbol">
                 <p>Draw symbol</p>
               </Link>
             </div>

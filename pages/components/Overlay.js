@@ -9,7 +9,7 @@ export const Overlay = ({ children }) => {
         <Logo />
         <Navigation />
       </div>
-      {/* <main>{children}</main> */}
+      <main>{children}</main>
     </>
   );
 };
