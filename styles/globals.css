@@ -1,3 +1,14 @@
+@font-face {
+  font-family: JapaneseFont;
+  src: url(Gomo-MOZv.ttf);
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#fff0de] font-[JapaneseFont];
+  }
+}
