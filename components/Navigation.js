@@ -78,12 +78,20 @@ export const Navigation = () => {
               </Link>
             </div>
             <div
-              className="hover:border-b-4 border-black duration-75 w-fit ease-in mt-4"
+              className="hover:border-b-4 border-black duration-75 w-fit ease-in"
               onClick={showNavigation}
             >
               <Link href="/">
-                <p>Return</p>
+                <p>Change alphabet</p>
               </Link>
+            </div>
+            <div
+              className="hover:border-b-4 border-black duration-75 w-fit ease-in mt-4"
+              onClick={showNavigation}
+            >
+              <button onClick={showNavigation}>
+                <p>Return</p>
+              </button>
             </div>
           </div>
         </>
