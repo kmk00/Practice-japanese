@@ -11,8 +11,9 @@ export const Navigation = () => {
     <nav className="fixed bottom-0">
       <div
         onClick={showNavigation}
-        className=" hover:scale-105 md:p-4 ease-in duration-300 z-50 animate-pulse"
+        className=" hover:scale-105 md:p-4 ease-in duration-300 z-50 animate-pulse flex flex-col sm:gap-4 items-center"
       >
+        <p className="text-xl md:text-3xl">Select Mode</p>
         <Image
           className=" scale-50 md:scale-100"
           width={100}
