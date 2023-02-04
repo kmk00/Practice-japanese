@@ -11,7 +11,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="flex justify-center items-center mt-[10%]">
-        <div className="xl:shadow-black xl:shadow-md rounded h-auto xl:w-[700px] flex items-center justify-center">
+        <div className="xl:shadow-black xl:shadow-md rounded h-auto xl:w-[700px] flex items-center justify-center p-4">
           <div className="hidden xl:block z-1">
             <Image
               width={250}

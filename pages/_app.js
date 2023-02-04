@@ -1,10 +1,13 @@
+import { MenuProvider } from "@/context/menu";
 import "@/styles/globals.css";
-import { Overlay } from "./components/Overlay";
+import { Overlay } from "../components/Overlay";
 
 export default function App({ Component, pageProps }) {
   return (
-    <Overlay>
-      <Component {...pageProps} />
-    </Overlay>
+    <MenuProvider>
+      <Overlay>
+        <Component {...pageProps} />
+      </Overlay>
+    </MenuProvider>
   );
 }
