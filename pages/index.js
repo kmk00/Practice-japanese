@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -9,7 +10,22 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>fds</main>
+      <main className="flex justify-center items-center mt-[10%]">
+        <div className="xl:shadow-black xl:shadow-md rounded h-auto xl:w-[700px] flex items-center justify-center">
+          <div className="hidden xl:block z-1">
+            <Image
+              width={250}
+              height={1}
+              src="/homeImage.svg"
+              alt="Decorative home image"
+            />
+          </div>
+          <p className="text-2xl md:text-5xl text-center w-1/2 tracking-wider">
+            This site is designed for anyone who wants to practice the basics of
+            Japanese.
+          </p>
+        </div>
+      </main>
     </>
   );
 }
