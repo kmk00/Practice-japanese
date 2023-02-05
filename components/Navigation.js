@@ -66,14 +66,6 @@ export const Navigation = () => {
               onClick={showNavigation}
             >
               <Link href="/">
-                <p>Words Translation</p>
-              </Link>
-            </div>
-            <div
-              className="hover:border-b-4 border-black duration-75 w-fit ease-in"
-              onClick={showNavigation}
-            >
-              <Link href="/">
                 <p>External sources</p>
               </Link>
             </div>
