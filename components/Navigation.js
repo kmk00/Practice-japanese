@@ -57,7 +57,7 @@ export const Navigation = () => {
               className="hover:border-b-4 border-black duration-75 w-fit ease-in"
               onClick={showNavigation}
             >
-              <Link href="/">
+              <Link href="/soundPractice">
                 <p>Practice Sound</p>
               </Link>
             </div>

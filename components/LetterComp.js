@@ -48,7 +48,7 @@ function LetterComp({ character, alphabet, getPoint }) {
       wrong:
         "flex flex-col items-center gap-3 w-28 h-28 md:w-32 md:h-32 xl:w-36 xl:h-36 bg-red-600 p-4 rounded-t-xl shadow-md shadow-black",
       default:
-        "flex flex-col items-center gap-3 w-28 h-28 md:w-32 md:h-32 xl:w-36 xl:h-36 bg-slate-600 p-4 rounded-t-xl shadow-md shadow-black",
+        "flex flex-col items-center gap-3 w-28 h-28 md:w-32 md:h-32 xl:w-36 xl:h-36 bg-cyan-800 p-4 rounded-t-xl shadow-md shadow-black",
     },
   };
 
