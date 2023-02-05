@@ -4,7 +4,6 @@ import Image from "next/image";
 
 export default function Home() {
   const [alphabet, setAlphabet] = useAlphabetContext();
-  console.log(alphabet);
   const style = {
     active: "border-b-4 border-black duration-75 w-fit ease-in text-green-700",
     notActive:
