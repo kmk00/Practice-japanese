@@ -93,9 +93,9 @@ function guessSymbol() {
         <p className={scoreStyle}>{`Score: ${score}/${totalScore}`}</p>
       </div>
       <div className="flex flex-col gap-4 items-center">
-        <form className="text-center text-md flex-col flex items-center gap-4">
+        <form className="text-center text-md flex-col flex items-center">
           <input
-            className="text-xl md:text-3xl sm:text-2xl text-center text-white max-w-lg h-12 md:h-16 bg-black border-gray-400 shadow-md shadow-black border-2 disabled:bg-gray-600"
+            className="text-xl sm:text-2xl xl:text-6xl text-center text-white max-w-lg h-12 md:h-16 bg-black border-gray-400 shadow-md shadow-black border-2 disabled:bg-gray-600"
             type="text"
             value={answer}
             onChange={handleAnswer}
@@ -116,7 +116,9 @@ function guessSymbol() {
             </button>
           )}
           {isCorrect === false && (
-            <p className=" cursor-default mt-8 text-md md:text-5xl sm:text-4xl">{`Correct answer: ${character}`}</p>
+            <p className="bg-green-500 w-full md:text-2xl font-black xl:text-6xl text-center border-4 rounded-b-xl shadow-md shadow-black">
+              {character}
+            </p>
           )}
         </form>
         <button

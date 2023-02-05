@@ -49,7 +49,7 @@ export const Navigation = () => {
               className="hover:border-b-4 border-black duration-100 ease-in"
               onClick={showNavigation}
             >
-              <Link href="/">
+              <Link href="/writealphabet">
                 <p>Write Alphabet</p>
               </Link>
             </div>
@@ -82,7 +82,7 @@ export const Navigation = () => {
               onClick={showNavigation}
             >
               <Link href="/">
-                <p>Change alphabet</p>
+                <p>Home Page</p>
               </Link>
             </div>
             <div
