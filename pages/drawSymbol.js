@@ -48,7 +48,7 @@ function drawSymbol() {
   };
 
   return (
-    <div className="w-full flex flex-col md:grid md:grid-cols-2 items-center gap-4 md:mt-20  md:text-3xl ">
+    <div className="w-full flex flex-col md:grid md:grid-cols-2 items-center gap-4 md:mt-20 md:mb-20  md:text-3xl ">
       <div className="flex flex-col items-center  h-full">
         <div className="bg-black xl:w-[600px] xl:h-[600px] md:w-[400px] md:h-[400px] p-4 flex justify-center text-3xl items-center gap-8 border-gray-400 shadow-md shadow-black border-2">
           {!showResult ? (
