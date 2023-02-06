@@ -57,8 +57,8 @@ export const Navigation = () => {
               className="hover:border-b-4 border-black duration-75 w-fit ease-in"
               onClick={showNavigation}
             >
-              <Link href="/">
-                <p>External sources</p>
+              <Link href="/externalSources">
+                <p>Learning tips</p>
               </Link>
             </div>
             <div
