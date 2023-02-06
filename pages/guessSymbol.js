@@ -21,9 +21,9 @@ function guessSymbol() {
   const inputBox = useRef();
 
   const style = {
-    correct: "text-green-400 mt-8 md:text-7xl sm:text-6xl  text-2xl font-bold",
-    wrong: "text-red-400 mt-8 md:text-7xl sm:text-6xl  text-2xl font-bold",
-    default: "mt-8 md:text-7xl sm:text-6xl  text-2xl font-bold",
+    correct: "text-green-400 mt-8 md:text-7xl sm:text-5xl  text-2xl font-bold",
+    wrong: "text-red-400 mt-8 md:text-7xl sm:text-5xl  text-2xl font-bold",
+    default: "mt-8 md:text-7xl sm:text-5xl  text-2xl font-bold",
   };
 
   //set size of character window
@@ -110,7 +110,7 @@ function guessSymbol() {
           {isCorrect === undefined && (
             <button
               onClick={checkAnswer}
-              className="mt-8 text-xl md:text-6xl sm:text-5xl hover:border-b-4 font-black border-black duration-75 w-fit ease-in active:text-red-500"
+              className="mt-8 text-xl md:text-6xl sm:text-3xl hover:border-b-4 font-black border-black duration-75 w-fit ease-in active:text-red-500"
             >
               Check
             </button>
@@ -123,7 +123,7 @@ function guessSymbol() {
         </form>
         <button
           onClick={handleGetChar}
-          className="text-xl md:text-6xl m-4 sm:text-5xl hover:border-b-4 font-black border-black duration-75 w-fit ease-in active:text-red-500"
+          className="text-xl md:text-6xl m-4 sm:text-3xl hover:border-b-4 font-black border-black duration-75 w-fit ease-in active:text-red-500"
         >
           Generate New
         </button>

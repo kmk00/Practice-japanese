@@ -30,10 +30,10 @@ function drawSymbol() {
     }
   }, [windowSize]);
 
-  //clear canva when resized / when menu is opened
+  //clear canva when resized
   useEffect(() => {
-    canva.current.clear();
-  }, [canvaSize, navigate]);
+    if (!navigate) canva.current.clear();
+  }, [canvaSize]);
 
   useEffect(() => {
     setCharacter(random_item(characters));
@@ -56,7 +56,7 @@ function drawSymbol() {
               {character}
             </p>
           ) : (
-            <div className="xl:text-7xl md:text-8xl sm:text-5xl text-md text-white text-center">
+            <div className="xl:text-7xl md:text-8xl sm:text-5xl text-md text-white text-center z">
               <Image
                 width={resultSize}
                 height={resultSize}
@@ -74,16 +74,17 @@ function drawSymbol() {
         </button>
       </div>
       <div className="flex flex-col items-center ">
-        <CanvasDraw
-          className="border-gray-400 shadow-md shadow-black border-2"
-          canvasWidth={canvaSize}
-          canvasHeight={canvaSize}
-          hideInterface={true}
-          hideGrid={true}
-          brushColor={"#fffff"}
-          disabled={navigate}
-          ref={canva}
-        />
+        {!navigate && (
+          <CanvasDraw
+            className="border-gray-400 shadow-md shadow-black border-2"
+            canvasWidth={canvaSize}
+            canvasHeight={canvaSize}
+            hideInterface={true}
+            hideGrid={true}
+            brushColor={"#fffff"}
+            ref={canva}
+          />
+        )}
         <div className="flex justify-center w-full gap-12 xl:col-span-2 p-4">
           <button
             className="p-2 text-xl xl:text-5xl md:text-2xl hover:border-b-4 border-black duration-75 w-fit ease-in active:text-red-500"
