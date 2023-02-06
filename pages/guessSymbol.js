@@ -95,7 +95,7 @@ function guessSymbol() {
       <div className="flex flex-col gap-4 items-center">
         <form className="text-center text-md flex-col flex items-center">
           <input
-            className="text-xl sm:text-2xl xl:text-6xl text-center text-white max-w-lg h-12 md:h-16 bg-black border-gray-400 shadow-md shadow-black border-2 disabled:bg-gray-600"
+            className="text-xl sm:text-2xl xl:text-6xl text-center text-white max-w-lg h-12 md:h-16 bg-black border-gray-400 shadow-md shadow-black border-2 disabled:bg-gray-600 font-black"
             type="text"
             value={answer}
             onChange={handleAnswer}

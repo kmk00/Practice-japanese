@@ -1,11 +1,12 @@
 import { useMenuContext } from "@/context/menu";
 import Image from "next/image";
-import React, { useState } from "react";
+import React from "react";
 
 function LetterSound({ alphabet, character }) {
   const [navigate] = useMenuContext();
 
   const handleClick = (sound) => {
+    if (navigate) return;
     const newAudio = new Audio(sound);
     newAudio.play();
   };

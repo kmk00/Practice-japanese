@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 import { useAlphabetContext } from "@/context/alphabet";
 import { characters } from "@/assets/characters-data";

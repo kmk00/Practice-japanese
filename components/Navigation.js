@@ -1,5 +1,4 @@
 import { useMenuContext } from "@/context/menu";
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -12,16 +11,9 @@ export const Navigation = () => {
     <nav className="fixed bottom-5">
       <div
         onClick={showNavigation}
-        className=" hover:scale-105 md:p-4 ease-in duration-300 z-50 animate-pulse flex flex-col sm:gap-4 items-center"
+        className=" hover:scale-105 md:p-4 ease-in duration-300 z-50 animate-pulse flex flex-col items-center cursor-pointer"
       >
-        <Image
-          className=" scale-50 md:scale-100"
-          width={50}
-          height={30}
-          src="/japanese-char.svg"
-          alt="Menu image"
-        ></Image>
-        <p className="text-xl hidden sm:block md:text-3xl">Select Mode</p>
+        <p className="sm:text-xl text-sm md:text-3xl">Select Mode</p>
       </div>
 
       {navigate && (
