@@ -9,9 +9,9 @@ Practice writing the alphabet
 Listen to the sound of Kana
 
 Used technologies:
-  - ReactJs
-  - TailwindCss
-  - NextJs
+  - React Js
+  - Tailwindcss
+  - Next Js
   - React context API
   - React canvas draw
   - React icons
