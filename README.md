@@ -1,4 +1,4 @@
-DEMO: kmk00-practice-japanese.netlify.app/
+DEMO: https://kmk00-practice-japanese.netlify.app/
 
 The purpose of the site is likely to help users improve their Japanese language skills through various exercises or resources. Exercises available on the site:
 
